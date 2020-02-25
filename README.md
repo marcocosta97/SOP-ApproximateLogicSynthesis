@@ -1,6 +1,6 @@
 # SOP-ApproximateLogicSynthesis
 
-This software performs Approximate Logic Synthesis of Sum Of Products forms as described on [Shin, Gupta (2010)](https://www.researchgate.net/publication/221341253_Approximate_logic_synthesis_for_error_tolerant_applications). Furthermore, it uses a technique called bi-decomposition to rebuild the original function in a new 3-level form (AND-OR-AND) without approximation. The final number of literals are guaranteed to be **less or equal than** the original function. A reference on bi-decomposition can be found [here](https://upcommons.upc.edu/bitstream/handle/2117/126070/01201580.pdf).
+This software performs Approximate Logic Synthesis of Sum Of Products forms as described on [Shin, Gupta (2010)](https://www.researchgate.net/publication/221341253_Approximate_logic_synthesis_for_error_tolerant_applications). Furthermore, it uses a technique called bi-decomposition to rebuild the original function in a new 3-level form (AND-OR-AND) without approximation. The final number of literals is guaranteed to be **less or equal than** the original function. A reference on bi-decomposition can be found [here](https://upcommons.upc.edu/bitstream/handle/2117/126070/01201580.pdf).
 
 ## Requirements
 
