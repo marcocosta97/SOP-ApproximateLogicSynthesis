@@ -15,7 +15,7 @@ $ make all
 
 ## Running
 
-Once builded execute the following command
+Once built execute the following command
 ```bash
 $ ./main -g error input.pla
 ```
