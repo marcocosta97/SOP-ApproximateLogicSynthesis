@@ -4,7 +4,7 @@ This software performs Approximate Logic Synthesis of Sum Of Products forms as d
 
 ## Requirements
 
-This software requires the [cudd](https://web.mit.edu/sage/export/tmp/y/usr/share/doc/polybori/cudd/cuddExtDet.html) library in order to perform efficiently basic operations on Boolean functions (you can download it [here](https://github.com/ivmai/cudd/releases)) and the [Espresso logic minimizer](https://ptolemy.berkeley.edu/projects/embedded/pubs/downloads/espresso/index.htm) installed on your system.
+This software requires the [cudd](https://web.mit.edu/sage/export/tmp/y/usr/share/doc/polybori/cudd/cuddExtDet.html) library (at least version 3.0) in order to perform efficiently basic operations on Boolean functions (you can download it [here](https://github.com/ivmai/cudd/releases)) and the [Espresso logic minimizer](https://ptolemy.berkeley.edu/projects/embedded/pubs/downloads/espresso/index.htm) installed on your system.
 
 ## Building
 
