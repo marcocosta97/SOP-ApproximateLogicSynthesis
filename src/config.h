@@ -19,6 +19,8 @@
 #define ESPRESSO_OUTPUT_PLA OUTPUT_DIR "out_espresso.pla"
 #define OUTPUT_PLA OUTPUT_DIR "out.pla"
 
+#define BEST_OUTPUT_PLA OUTPUT_DIR "best.pla" // the best between espresso and not
+
 #define DEFAULT_CT 1
 
 /* decomposizione */

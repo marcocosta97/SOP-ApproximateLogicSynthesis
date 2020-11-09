@@ -856,11 +856,23 @@ int main(int argc, char *argv[])
      *          3. PLA euristica + espresso
      */
     struct test_stats *chosen_pla;
+	int is_espresso_best;
 
     if (heuristic_pla_stats.or_port == espresso_pla_stats.or_port)
-        chosen_pla = (espresso_pla_stats.and_lit <= heuristic_pla_stats.and_lit) ? &espresso_pla_stats : &heuristic_pla_stats;
+		is_espresso_best = (espresso_pla_stats.and_lit <= heuristic_pla_stats.and_lit);
     else
-        chosen_pla = (espresso_pla_stats.or_port < heuristic_pla_stats.or_port) ? &espresso_pla_stats : &heuristic_pla_stats;
+		is_espresso_best = (espresso_pla_stats.or_port < heuristic_pla_stats.or_port);
+
+	if (is_espresso_best)
+	{
+		chosen_pla = &espresso_pla_stats;
+		system("cp " ESPRESSO_OUTPUT_PLA " " BEST_OUTPUT_PLA);
+	}
+	else
+	{
+		chosen_pla = &heuristic_pla_stats;
+		system("cp " MINIMIZED_OUTPUT_PLA " " BEST_OUTPUT_PLA);
+	}
 
     if (output_mode == VERBOSE_LOG)
     {
